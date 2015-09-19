@@ -35,20 +35,20 @@ file_2.csv
 ##Sample Subscriber Configurations
 
 Sample conditions are: 
-``if release date >= 01-01-2000, notify to subscriber1 
+```if release date >= 01-01-2000, notify to subscriber1 
 if publisher is Addison-Wesley and list price is >= 10, notify to subscriber2
-``
+```
 ##Sample Query
 ``
 GET 13579``
 ##Result Set:
-``
+```
 title=freakonomics
 authors=Levitt & Dubner
 release date = 20-09-2011
 list price=11 USD
 publisher=William Morrow
-``
+```
 ##Technology
 
 Programming Language: Java, but using C#/ C++ is acceptable 
