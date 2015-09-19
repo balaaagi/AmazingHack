@@ -1,9 +1,9 @@
 # AmazingHack
-Problem Description:
+##Problem Description:
 
 The goal is to build a configurable notification system, which receives inputs in a CSV file and notifies its subscribers based on the condition set.
 
-System Requirements:
+##System Requirements:
 
 The system should consume CSV files which are dropped into a shared folder which are of the form item,attribute_name,attribute_value. The CSV files will be dropped into the shared folder at any point in time.
 The system should be able to notify the attribute changes for items to different subscribers based on different configurable conditions
@@ -13,10 +13,10 @@ The system should be scalable to
 accept large number of/large sized CSV files
 support large number of subscriber configurations
 support high throughput and low latency on the get query
-Sample Files:
+##Sample Files:
 
 file_1.csv
-
+``
 13579,title,freakonomics
 13579,authors,Levitt & Dubner
 13579,release date,20-09-2011
@@ -26,26 +26,30 @@ file_1.csv
 1248,authors,Joshua Bloch
 1248,list price,10 USD
 1248,publisher,Addison-Wesley
-file_2.csv
+``
 
+file_2.csv
+``
 13579, list price,11 USD
-Sample Subscriber Configurations
+
+##Sample Subscriber Configurations
 
 Sample conditions are: 
-if release date >= 01-01-2000, notify to subscriber1 
+``if release date >= 01-01-2000, notify to subscriber1 
 if publisher is Addison-Wesley and list price is >= 10, notify to subscriber2
-
-Sample Query
-
-GET 13579
-Result Set:
-
+``
+##Sample Query
+``
+GET 13579``
+##Result Set:
+``
 title=freakonomics
 authors=Levitt & Dubner
 release date = 20-09-2011
 list price=11 USD
 publisher=William Morrow
-Technology
+``
+##Technology
 
 Programming Language: Java, but using C#/ C++ is acceptable 
 Other Technologies: AWS
